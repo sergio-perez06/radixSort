@@ -27,12 +27,16 @@ public class RadixSortEjerc
 		}
 
 
-		arr = StringUtil.toIntArray(stringArr);
+		int [] newFinalArray = StringUtil.toIntArray(stringArr);
 
-		System.out.println("\n" +"FINAL list : ");
+		for(int i=0;i<arr.length;i++){
+			arr[i] = newFinalArray[i];
+		}
+
+		/*System.out.println("\n" +"FINAL list : ");
 		for(int i: arr){
 			System.out.println(i);
-		}
+		}*/
 
 		System.out.println("\n");
 	}

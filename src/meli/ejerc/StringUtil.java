@@ -8,8 +8,6 @@ public class StringUtil
 	{
 		String newString = String.valueOf(c);
 		newString.repeat(n);
-		System.out.println(newString);
-
 		return newString;
 	}
 
@@ -33,11 +31,6 @@ public class StringUtil
 		for(int i=0;i<arr.length;i++){
 			numbers[i] = String.valueOf(arr[i]);
 		}
-
-		for(String s: numbers){
-			System.out.println(s);
-		}
-
 		return numbers;
 	}
 
@@ -48,10 +41,6 @@ public class StringUtil
 		int [] numbers = new int[arr.length];
 		for(int i=0;i<arr.length;i++){
 			numbers[i] = Integer.parseInt(arr[i]);
-		}
-
-		for(int n: numbers){
-			System.out.println(n);
 		}
 
 		return numbers;
@@ -76,16 +65,9 @@ public class StringUtil
 	{
 		int maxLength = maxLength(arr);
 
-		//System.out.println("Found max length = "+maxLength);
-
 		for (int i=0;i<arr.length;i++){
 			if(arr[i].length() < maxLength){
-				//System.out.println("Length of string is = "+arr[i].length());
-				int difference = maxLength-arr[i].length();
-				 /*System.out.println("Diference of size  = "+difference);
-				 System.out.println("Previous   = "+arr[i]);*/
 				arr[i] = lpad(arr[i],maxLength,c);
-				// System.out.println("After pad    = "+arr[i]);
 			}
 		}
 	}
